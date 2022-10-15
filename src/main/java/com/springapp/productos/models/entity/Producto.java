@@ -16,6 +16,12 @@ import javax.persistence.TemporalType;
 @Table(name = "productos")
 public class Producto implements Serializable {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 3233311060567126176L;
+	
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
@@ -25,9 +31,6 @@ public class Producto implements Serializable {
 	@Column(name = "create_at")
 	@Temporal(TemporalType.DATE)
 	private Date createAt;
-	
-	
-	
 	
 	
 	public Long getId() {
