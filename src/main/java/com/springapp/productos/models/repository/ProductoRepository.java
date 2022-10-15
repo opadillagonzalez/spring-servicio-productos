@@ -6,6 +6,4 @@ import com.springapp.productos.models.entity.Producto;
 
 public interface ProductoRepository extends CrudRepository<Producto, Long> {
 	
-	
-
 }
